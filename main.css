@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+body{
+    font-family: 'Comic Neue', cursive;
+    background-color:#dbc1ac;
+}
+
+
+
+.nav-menu{
+    padding:25px;
+    color:#dbc1ac;
+}
+.navbar-toggler{
+    color:#fff;
+}
+.menu{
+    font-size:20px;
+    letter-spacing:1px;
+    color:azure;
+    transition:all .4s;
+   
+
+}
+.menu:hover{
+    color:black;
+    font-weight: 600;
+}
+
+header{
+height:100vh;
+background:linear-gradient(rgba(235, 230, 230, 0.63),rgba(0,0,0,0.5)) url(images/hero.jpeg)no-repeat center center/cover;
+ 
+}
+.banner{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+   
+}
+.heading{
+    animation-name:slide;
+    animation-duration:2s;
+}
+.main{
+    animation-name: slide;
+    animation-duration:2s;
+    animation-delay: 0.5s;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(-1000px);
+        opacity:0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+#about{
+    background-color:#dbc1ac;
+    margin-top: 30px;
+    color:rgba(165, 42, 42, 0.562)
+}
+.text{
+    font-size:28px;
+}
+.about-image{
+    position:relative;
+
+}
+.btn{
+    color:brown;
+    font-weight: bold;
+}
+.content-4 .nav{
+    justify-content:center;
+    margin:5%;
+}
+.content-4 .nav-tabs{
+    margin:2px;
+    border:none;
+    border-bottom:0px;
+    text-align:center;
+    cursor:pointer;
+    background: black;
+}
+.content-4 .tab-item {
+    display:block;
+    font-size:35px;
+    padding:6px;
+    text-decoration: none;
+    color:#dbc1ac;
+
+}
+.content-4 .tab-item span{
+    display:inline-block;
+    width:100%;
+    padding-bottom:16px;
+}
+.content-4 .tab-item.active{
+color:#967259;
+}
+.tab-content{
+    margin-bottom:5%;
+    transition:all .4s ease;
+}
+.productimages{
+    width:20rem;
+    height:20rem;
+    displa:border-box;
+}
+
+
+
+.contact-grids {
+    margin-top: 5em;
+}
+.contact-grids h4 {
+    text-transform: capitalize;
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.contact-left h5 {
+    text-transform: capitalize;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.contact-left p,.contact-left p a {
+    margin: 0;
+    line-height: 28px;
+    letter-spacing: .5px;
+    font-size: 16px;
+    color: #666;
+}
+.contact-left p a:hover {
+    color: #000;
+}
+.map iframe {
+    width: 100%;
+    min-height: 260px;
+    border: 5px solid #eee;
+}
+.icon span {
+    color: #30c39e;
+}
+.contact-right input[type="text"], .contact-right input[type="email"], .contact-right textarea {
+    outline: none;
+    width: 83%;
+    padding: .9em 1.3em;
+     font-size: 15px;
+    letter-spacing: 1px;
+    color: #888;
+    border: none;
+    border: 1px solid #ccc;
+    background: none;
+    margin-bottom: 1.5em;
+	border-radius: 5px;
+}
+.contact-right button[type="submit"] {
+    padding: 11px 35px;
+    color: #fff;
+    background: #0a8ea0;
+	border: 2px solid #0a8ea0;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+     float: right;
+	 cursor: pointer;
+}
+.contact-right button[type="submit"]:hover {
+    color: #222;
+    background: none;
+	border: 2px solid #222;
+}
+.contact label {
+    width: 17%;
+    float: left;
+    color: #333;
+    font-weight: 600;
+}
+.contact label span {
+    color: #30c39e;
+}
+.contact-right textarea {
+    min-height: 120px;
+    resize: none;
+}
